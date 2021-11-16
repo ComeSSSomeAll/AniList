@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Bootstrap Navbar</title>
+		<!-- Подключаем Bootstrap CSS через CDN -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- Подключаем style.css -->
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<nav role="navigation" class="navbar navbar-inverse">
+					<div class="container">
+						<div class="navbar-header header">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12">
+										<h1><a href="index.html">AniList</a></h1>
+										<p>Отслеживайте свои тайтлы!</p>
+									</div>
+								</div>
+							</div>
+							<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div id="navbarCollapse" class="collapse navbar-collapse navbar-right collapse in">
+							<ul class="nav nav-pills">
+								<li class="active"> <a href="index.html">Главная</a> </li>
+								<li> <a href="#">Фильмы</a> </li>
+								<li> <a href="#">Сериалы</a> </li>
+								<li> <a href="rating.html">Рейтинг аниме</a> </li>
+								<li> <a href="contacts.html">Контакты</a> </li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="wrapper">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-lg-9 col-lg-push-3">
+
+						<form role="search" class="visible-xs">
+							<div class="form-group">
+								<div class="input-group">
+									<input type="search" class="form-control input-lg" placeholder="Ваш запрос">
+									<div class="input-group-btn">
+										<button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+									</div>
+								</div>
+							</div>
+						</form> 
+						
+						<h2>Новые фильмы</h2>
+						<hr>
+
+						<div class="row">
+
+							<div class="filmsBlock col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<a href="show.html"><img src="assets/images/weather.jpeg"></a>
+								<div class="filmLabel"><a href="show.html">Дитя погоды</a></div>
+							</div>
+
+							<div class="filmsBlock col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<img src="assets/images/promare.jpeg">
+								<div class="filmLabel">Промар</div>
+							</div>
+
+							<div class="filmsBlock col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<img src="assets/images/ocean.jpg">
+								<div class="filmLabel">Дети моря</div>
+							</div>
+
+							<div class="filmsBlock col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<img src="assets/images/wonderland.jpeg">
+								<div class="filmLabel">В стране чудес</div>
+							</div>
+
+							<div class="margin-8"></div>
+						</div>
+
+						<h2>Новые сериалы</h2>
+						<hr>
+
+						<div class="row">
+
+							<div class="filmsBlock col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<img src="assets/images/vinland.jpg">
+								<div class="filmLabel">Сага о Винланде</div>
+							</div>
+
+							<div class="filmsBlock col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<img src="assets/images/beastars.jpg">
+								<div class="filmLabel">Выдающиеся звери</div>
+							</div>
+
+							<div class="filmsBlock col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<img src="assets/images/dororo.jpg">
+								<div class="filmLabel">Дороро</div>
+							</div>
+
+							<div class="filmsBlock col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<img src="assets/images/neverland.jpg">
+								<div class="filmLabel">Обещанный неверленд</div>
+							</div>
+
+							
+						</div>
+
+						<div class="margin-8"></div>
+
+							<a href="#"><h3>Неприятные новости для фанатов культовой манги «Akira»</h3></a>
+							<hr>
+							<p>
+								Как сообщает ряд голливудских ресурсов, предстоящая голливудская адаптация «Акиры» пропала из графика премьер Warner Bros.
+                           	 	Журналисты узнавшие об этом преполагают, что всему виной предстоящий выход сиквела «Матрицы» и фильма «Флэш», 
+                            	чьи премьеры были поставлены на 2021 и 2022 годы, соответственно.
+							</p>
+
+
+							<a href="#" class="btn btn-warning pull-right">Подробнее</a>
+
+							<div class="margin-8"></div>
+
+							<a href="#"><h3>Премьера отреставрированной версии «Ходячего замка»</h3></a>
+							<hr>
+							<p>
+								В скором времени состоится премьера отреставрированной версии полнометражного аниме «Ходячий замок» Хаяо Миядзаки, 
+                            	в честь чего представляем вам дублированный трейлер!
+                            	Специальные показы пройдут на японском языке с русскими субтитрами. 
+							</p>
+
+
+							<a href="#" class="btn btn-warning pull-right">Подробнее</a>
+
+							<div class="margin-8 clear"></div>
+					</div>
+
+					<div class="col-lg-3 col-lg-pull-9">
+
+						<div class="panel panel-info hidden-xs">
+							<div class="panel-heading"><div class="sidebar-header">Поиск</div></div>
+							<div class="panel-body">
+								<form role="search">
+									<div class="form-group">
+										<div class="input-group">
+											<input type="search" class="form-control input-lg" placeholder="Ваш запрос">
+											<div class="input-group-btn">
+												<button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+											</div>
+										</div>
+									</div>
+								</form> 
+							</div>
+						</div>
+
+						<div class="panel panel-info">
+							<div class="panel-heading"><div class="sidebar-header">Вход</div></div>
+							<div class="panel-body">
+
+								<form role="form">
+									<div class="form-group">
+										<input type="text" class="form-control input-lg" placeholder="Логин">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control input-lg" placeholder="Пароль">
+									</div>
+
+									<button type="submit" class="btn btn-warning pull-right">Вход</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="panel panel-info">
+							<div class="panel-heading"><div class="sidebar-header">Новости</div></div>
+							<div class="panel-body">
+								21.12.2019
+								<p>Новая версия сайта</p>
+							</div>
+						</div>
+
+						<div class="panel panel-info">
+							<div class="panel-heading"><div class="sidebar-header">Рейтинг аниме</div></div>
+							<div class="panel-body">
+
+								<ul class="list-group">
+									<li class="list-group-item list-group-item-warning">
+										<span class="badge">9.76</span>
+										<a href="show1.html">Монстр</a>
+									</li>
+
+									<li class="list-group-item list-group-item-warning">
+										<span class="badge">9.18</span>
+										<a href="#">GTO</a>
+									</li>
+
+									<li class="list-group-item list-group-item-warning">
+										<span class="badge">9.14</span>
+										<a href="#">FMA: Brotherhood</a>
+									</li>
+
+									<li class="list-group-item list-group-item-warning">
+										<span class="badge">9.12</span>
+										<a href="#">Код Гиас [ТВ-2]</a>
+									</li>
+
+									<li class="list-group-item list-group-item-warning">
+										<span class="badge">9.08</span>
+										<a href="#">Унесённые призраками</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+
+		<footer>
+
+			<div class="container">
+				<p class="text-center"><a href="index.html">AniList.com</a></p>
+			</div>
+		</footer>
+
+		<!-- Подключаем jQuery и Bootstrap JS через CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+	</body>
+</html>
